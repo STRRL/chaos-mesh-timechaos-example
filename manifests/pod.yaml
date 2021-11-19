@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: the-time-cpp
+  name: the-time-cpp
+spec:
+  containers:
+  - image: ghcr.io/strrl/the-time-cpp:latest
+    name: the-time-cpp
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
